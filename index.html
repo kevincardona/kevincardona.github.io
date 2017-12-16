@@ -1,11 +1,50 @@
 <html>
   <head>
     <title>Kevin Cardona</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="kevin cardona" />
+    <meta name="author" content="Kevin Cardona" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <div class="nav"></div>
-    
+    <div class="container">
+      <div id="toc-holder" class="toc-holder">
+  			<a href="#" class="toc-link" id="toc-link"><span>&#9776;</span></a>
+  			<ul id="toc" class="toc">
+  				<li class="toc-h1"><a href="#about">About</a></li>
+  				<li class="toc-h1"><a href="#resume">Resume</a></li>
+  				<li class="toc-h1"><a href="#work">Work</a></li>
+  			</ul>
+  		</div>
+      <div id="header">
+          Kevin Cardona
+      </div>
+
+      <div id="about">
+        test
+      </div>
+      <div id="resume">
+
+      </div>
+      <div id="work">
+
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery.fixedTOC.js"></script>
+    <script>
+        $('#toc').fixedTOC({
+          menuOpens: 'click',
+          scrollSpeed: 1000,
+          menuSpeed: 300,
+          useSubMenus: true,
+          resetSubMenus: true,
+          topLinkWorks: true
+        });
+    </script>
   </body>
 </html>
