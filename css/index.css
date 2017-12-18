@@ -18,6 +18,7 @@ body {
   background-color: #545960;
   height: 300px;
   margin-top: 0px;
+  padding-top: 75px;
 }
 
 #about h1 {
@@ -30,8 +31,8 @@ body {
   margin-top: 0px;
 }
 
-#work {
-  background-color: #70a3f4;
+#projects {
+  background-color: #FF5733;
   height: 300px;
   margin-top: 0px;
 }
@@ -42,11 +43,6 @@ body {
   height:100%;
 	margin: 0;
 
-}
-
-.toc-holder {
-	width: 18%;
-	min-width: 360px;
 }
 
 .toc-holder a {
@@ -108,14 +104,6 @@ a.toc-link {
 	-o-transition: -o-transform .4s ease;
 	-ms-transition: -ms-transform .4s ease;
 	transition: transform .4s ease;
-}
-
-.toc-link span.rotate {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
 }
 
 .toc {
@@ -183,7 +171,6 @@ h2 {
 	display: block;
 	text-decoration: none;
 	position: fixed;
-	bottom: 0;
 	right: 2%;
 	color: white;
 	background: #222;
@@ -211,12 +198,17 @@ h2 {
 	}
 
 	.top-link {
-		top: 2px;
 		z-index: 20;
 		background: none;
 	}
-  .toc-h1 {
+  .toc-h1 a{
+    position: relative;
+
     text-align: center;
+    float: left;
+    padding: 0;
+    width: 33%;
+    margin: auto;
   }
 
 }
