@@ -37,6 +37,41 @@ body {
   margin-top: 0px;
 }
 
+#profile {
+  display: block;
+  padding: 15px;
+}
+
+#profile h {
+  font-family: "Arya";
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+#profileimg {
+  display: block;
+  text-align: center;
+  border-radius: 500px;
+  width: 100px;
+  height: auto;
+  margin: auto;
+}
+
+.info {
+  max-width: 420px;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-family: "Karla";
+  font-size: 12px;
+}
+
+.info i {
+  font-style: italic;
+}
+
 /* Table of Contents TOC */
 .container {
 	width: 100%;
@@ -139,14 +174,6 @@ a.toc-link {
 
 .closed {
 	display: block;
-}
-
-h1 {
-	font-family: Georgia, sans-serif;
-	font-size: 2.3em;
-	font-style: italic;
-	margin: 0 0 40px 0;
-	text-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px;
 }
 
 footer {
