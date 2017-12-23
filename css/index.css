@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration-color: gray;
+  color: gray;
+}
+
 #header {
   font-family: Inconsolata;
   line-height: 75px;
@@ -12,27 +17,23 @@ body {
   position: fixed;
   width: 50%;
   left: 25%;
+  z-index: 100;
 }
 
 #about {
   background-color: #545960;
-  height: 300px;
+  height: 200px;
   margin-top: 0px;
-  padding-top: 75px;
+  padding-top: 100px;
 }
 
 #about h1 {
   z-index: 10;
 }
 
-#resume{
-  background-color: #70a3f4;
-  height: 300px;
-  margin-top: 0px;
-}
 
 #projects {
-  background-color: #FF5733;
+  background-color: white;
   height: 300px;
   margin-top: 0px;
 }
@@ -58,6 +59,17 @@ body {
   margin: auto;
 }
 
+#interests {
+  height: 200px;
+  margin-top: 0px;
+  padding-top: 100px;
+}
+
+#links {
+  width: 100%;
+  background: #F1F1F1;
+}
+
 .info {
   max-width: 420px;
   margin: auto;
@@ -70,6 +82,78 @@ body {
 
 .info i {
   font-style: italic;
+}
+
+.card-container {
+  text-align: center;
+  width: 375px;
+  height: 100px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #F1F1F1;
+  margin: auto;
+}
+
+.card {
+  float: left;
+  width: 120px;
+  height: 50px;
+  background: #AED6F1;
+  margin: auto;
+  margin-top: 30px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+
+}
+
+#resume {
+  border-radius: 10px;
+}
+
+#linkedin .card-image {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#linkedin {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card:hover {
+  background: #D0D3D4;
+}
+
+.card-image {
+  text-align: center;
+  float: left;
+  width: 35%;
+  height: 50px;
+  margin: auto;
+  background: #5DADE2;
+}
+
+.card-image:hover {
+  background-position: 0 100%;
+}
+
+.card #image {
+  padding-top: 10px;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.card-label {
+  font-family: "Arial";
+  font-size: 15px;
+  float: left;
+  text-align: center;
+  height: 100%;
+  width: 65%;
+  line-height: 50px;
+  color: white;
+  margin: auto;
 }
 
 /* Table of Contents TOC */
@@ -113,6 +197,7 @@ body {
 .toc-holder {
 	position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 a.toc-link {
@@ -210,7 +295,6 @@ h2 {
 }
 
 @media (max-width: 480px) {
-
 	.toc-holder {
 		left: 0;
 		right: 0;
@@ -229,13 +313,8 @@ h2 {
 		background: none;
 	}
   .toc-h1 a{
-    position: relative;
-
-    text-align: center;
-    float: left;
-    padding: 0;
-    width: 33%;
-    margin: auto;
+    background-color: #F0F0F0;
   }
-
 }
+
+/* Animations (If I make any hehe)*/

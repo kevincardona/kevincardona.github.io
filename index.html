@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       $(document).ready(function(){
@@ -33,8 +34,7 @@
   			<a href="#" class="toc-link" id="toc-link"><span>&#9776;</span></a>
   			<ul id="toc" class="toc">
   				<li class="toc-h1"><a href="#about">About</a></li>
-  				<li class="toc-h1"><a href="#resume">Resume</a></li>
-  				<li class="toc-h1"><a href="#projects">Projects</a></li>
+  				<li class="toc-h1"><a href="#resume">Links</a></li>
   			</ul>
   		</div>
       <div id="header">
@@ -46,18 +46,41 @@
           <img id="profileimg" src="images/me.jpg"></img>
         </div>
         <div class="info">
-          Hi! I'm Kevin Cardona. I'm a Junior in Computer Science at <i>Purdue University</i>. 
-        </div>
-      </div>
-      <div id="resume">
-        <div class="info">
+          Hi! I'm Kevin Cardona. I'm a Junior in Computer Science at <i>Purdue University</i>.
+
 
         </div>
       </div>
-      <div id="projects">
-        <div class="info">
 
+      <div id="interests">
+        <div id="canvas"></div>
+      </div>
+
+      <div id="links">
+        <div class="card-container">
+          <a href="resume.pdf">
+            <div class="card" id="resume">
+              <div class="card-label">Resume</div>
+              <div class="card-image"><image id="image" src="images/icons/pdf.svg"></div>
+            </div>
+          </a>
+
+          <a href="https://www.github.com/kevincardona">
+            <div class="card">
+              <div class="card-label">Github</div>
+              <div class="card-image"><image id="image" src="images/icons/github.svg"></div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/kevincardona">
+            <div class="card" id="linkedin">
+              <div class="card-label">LinkedIn</div>
+              <div class="card-image"><image id="image" src="images/icons/linkedin.png"></div>
+            </div>
+          </a>
         </div>
+        <center>
+        <a href="mailto:kcardona@purdue.edu">Contact Me</a>
       </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -71,6 +94,12 @@
           resetSubMenus: true,
           topLinkWorks: true
         });
+    </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      duration: 1200
+    });
     </script>
   </body>
 </html>
