@@ -1,0 +1,76 @@
+#links {
+  width: 100%;
+  background: #F1F1F1;
+}
+
+#resume {
+  border-radius: 10px;
+}
+
+#linkedin .card-image {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#linkedin {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card #image {
+  padding-top: 10px;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.card-container {
+  text-align: center;
+  width: 375px;
+  height: 100px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #F1F1F1;
+  margin: auto;
+}
+
+.card {
+  float: left;
+  width: 120px;
+  height: 50px;
+  background: #AED6F1;
+  margin: auto;
+  margin-top: 30px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+
+}
+
+.card:hover {
+  background: #D0D3D4;
+}
+
+.card-image {
+  text-align: center;
+  float: left;
+  width: 35%;
+  height: 50px;
+  margin: auto;
+  background: #5DADE2;
+}
+
+.card-image:hover {
+  background-position: 0 100%;
+}
+
+.card-label {
+  font-family: "Arial";
+  font-size: 15px;
+  float: left;
+  text-align: center;
+  height: 100%;
+  width: 65%;
+  line-height: 50px;
+  color: white;
+  margin: auto;
+}

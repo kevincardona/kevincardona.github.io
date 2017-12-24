@@ -5,7 +5,10 @@
     <meta name="keywords" content="kevin cardona" />
     <meta name="author" content="Kevin Cardona" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/toc.css">
+    <link rel="stylesheet" type="text/css" href="css/links.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
@@ -46,14 +49,44 @@
           <img id="profileimg" src="images/me.jpg"></img>
         </div>
         <div class="info">
-          Hi! I'm Kevin Cardona. I'm a Junior in Computer Science at <i>Purdue University</i>.
-
-
+          Hi! I'm Kevin Cardona. <br/>
+          I'm a Junior in Computer Science at <i>Purdue University</i>. <br/>
+          I'm a backend developer thats passionate about music and new experiences.<br/>
         </div>
       </div>
 
-      <div id="interests">
-        <div id="canvas"></div>
+      <div id="projects">
+        <h1>Projects</h1>
+        <div class="project-container">
+        <a href="https://github.com/MoochMap"><div class="project-card"><h2 style="margin-bottom: 5px; padding-top: 2px;">MoochMap</h2>
+            Developed React frontend with a Node backend for a food related
+            event sharing app. Set up password encryption using BCrypt. Designed
+             a MongoDB database for user data.
+        </div></a>
+        <a href="https://github.com/kevincardona/steganographer"><div class="project-card"><h2 style="margin-bottom: 5px; padding-top: 2px;">Steganographer</h2>
+            Built an LSB Image manipulation tool to hide encrypted data inside
+            of an images color channels.
+        </div></a>
+        <a href="https://github.com/turnipapp"><div class="project-card"><h2 style="margin-bottom: 5px; padding-top: 2px;">Turnip</h2>
+            Collaborated with backend team to develop a Node backend for our event
+            creation app.
+        </div></a>
+      </div>
+    </div>
+
+      <div id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+          <div class="skills-card">C</div>
+          <div class="skills-card">C++</div>
+          <div class="skills-card">Java</div>
+          <div class="skills-card">Python</div>
+          <div class="skills-card">HTML</div>
+          <div class="skills-card">Javascript</div>
+          <div class="skills-card">Node</div>
+          <div class="skills-card">MongoDB</div>
+          <div class="skills-card">MySQL</div>
+        </div>
       </div>
 
       <div id="links">
@@ -83,6 +116,7 @@
         <a href="mailto:kcardona@purdue.edu">Contact Me</a>
       </div>
     </div>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="js/jquery.fixedTOC.js"></script>
     <script>
