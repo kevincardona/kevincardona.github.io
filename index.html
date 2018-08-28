@@ -1,139 +1,93 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Kevin Cardona</title>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="kevin cardona" />
-    <meta name="author" content="Kevin Cardona" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/toc.css">
-    <link rel="stylesheet" type="text/css" href="css/links.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Arya' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-              window.location.hash = hash;
-            });
-          }
-        });
-      });
-    </script>
+    <meta name="viewport" content="width=device-width">
+    <title>Kevin's Site</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
-
   <body>
-    <div class="container">
-      <div id="toc-holder" class="toc-holder">
-  			<a href="#" class="toc-link" id="toc-link"><span>&#9776;</span></a>
-  			<ul id="toc" class="toc">
-  				<li class="toc-h1"><a href="#about">About</a></li>
-  				<li class="toc-h1"><a href="#resume">Links</a></li>
-  			</ul>
-  		</div>
-      <div id="header">
-          Kevin Cardona
-      </div>
-
-      <div id="about">
-        <div id="profile">
-          <img id="profileimg" src="images/me.jpg"></img>
-        </div>
-        <div class="info">
-          Hi! I'm Kevin Cardona. <br/>
-          I'm a Junior in Computer Science at <i>Purdue University</i>. <br/>
-          I'm a backend developer thats passionate about music and new experiences.<br/>
-        </div>
-      </div>
-
-      <div id="projects">
-        <h1>Projects</h1>
-        <div class="project-container">
-        <a href="https://github.com/MoochMap"><div class="project-card"><h2 style="margin-bottom: 5px; padding-top: 2px;">MoochMap</h2>
-            Developed React frontend with a Node backend for a food related
-            event sharing app. Set up password encryption using BCrypt. Designed
-             a MongoDB database for user data.
-        </div></a>
-        <a href="https://github.com/kevincardona/steganographer"><div class="project-card"><h2 style="margin-bottom: 5px; padding-top: 2px;">Steganographer</h2>
-            Built an LSB Image manipulation tool to hide encrypted data inside
-            of an images color channels.
-        </div></a>
-        <a href="https://github.com/turnipapp"><div class="project-card"><h2 style="margin-bottom: 5px; padding-top: 2px;">Turnip</h2>
-            Collaborated with backend team to develop a Node backend for our event
-            creation app.
-        </div></a>
-      </div>
+    <div id="links">
+      <a href="https://www.linkedin.com/in/kevincardona/">
+        <input type="image" class="link-btn center-block rounded-btn" src="images/linkedin.png"></input>
+      </a>
+      <a href="https://github.com/kevincardona">
+        <input type="image" class="link-btn center-block rounded-btn" src="images/github.png"></button>
+      </a>
+      <a href="files/oldresume.pdf">
+        <input type="image" class="link-btn center-block rounded-btn" src="images/resume.png"></button>
+      </a>
     </div>
-
+    <div id="title">
+      <img id="title-image" class="center-block rounded" src="images/me.jpg"></img>
+      <h1 class="text-center">Kevin Cardona<h1>
+    </div>
+    <div id="details">
+      <h2 class="text-center text-white">About Me</h2>
+      <b>
+        I'm a senior in software engineering at Purdue University.
+      </b>
       <div id="skills">
-        <h1>Skills</h1>
-        <div class="skills-container">
-          <div class="skills-card">C</div>
-          <div class="skills-card">C++</div>
-          <div class="skills-card">Java</div>
-          <div class="skills-card">Python</div>
-          <div class="skills-card">HTML</div>
-          <div class="skills-card">Javascript</div>
-          <div class="skills-card">Node</div>
-          <div class="skills-card">MongoDB</div>
-          <div class="skills-card">MySQL</div>
+        <div class="table-container center-block">
+          <h2>Skills</h2>
+          <table>
+            <tr>
+              <th>Languages</th>
+            </tr>
+            <tr>
+              <td>Java</td>
+            </tr>
+            <tr>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td>C++</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+            </tr>
+            <tr>
+              <td>NodeJS</td>
+            </tr>
+          </table>
         </div>
-      </div>
-
-      <div id="links">
-        <div class="card-container">
-          <a href="resume.pdf">
-            <div class="card" id="resume">
-              <div class="card-label">Resume</div>
-              <div class="card-image"><image id="image" src="images/icons/pdf.svg"></div>
+        <div class="table-container center-block">
+            <table>
+              <tr>
+                <th>Coursework</th>
+              </tr>
+              <tr>
+                <td>Operating Systems</td>
+              </tr>
+              <tr>
+                <td>Data Structures & Algorithms</td>
+              </tr>
+              <tr>
+                <td>Software Engineering</td>
+              </tr>
+              <tr>
+                <td>Computer Architecture</td>
+              </tr>
+            </table>
+          </div>
+          <div class="table-container center-block">
+              <table>
+                <tr>
+                  <th>Project</th>
+                  <th>Info</th>
+                </tr>
+                <tr>
+                  <td class="table-border-bottom">Turnip</td>
+                  <td class="table-border-bottom">Collaborated with backend team to develop a Node backend for our event creation website.</td>
+                </tr>
+                <tr>
+                  <td class="table-border-bottom">Moochmap</td>
+                  <td class="table-border-bottom">Developed a React frontend with a Node backend for a food related event sharing app.</td>
+                </tr>
+              </table>
             </div>
-          </a>
-
-          <a href="https://www.github.com/kevincardona">
-            <div class="card">
-              <div class="card-label">Github</div>
-              <div class="card-image"><image id="image" src="images/icons/github.svg"></div>
-            </div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/kevincardona">
-            <div class="card" id="linkedin">
-              <div class="card-label">LinkedIn</div>
-              <div class="card-image"><image id="image" src="images/icons/linkedin.png"></div>
-            </div>
-          </a>
-        </div>
-        <center>
-        <a href="mailto:kcardona@purdue.edu">Contact Me</a>
       </div>
     </div>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/jquery.fixedTOC.js"></script>
-    <script>
-        $('#toc').fixedTOC({
-          menuOpens: 'click',
-          scrollSpeed: 1000,
-          menuSpeed: 300,
-          useSubMenus: true,
-          resetSubMenus: true,
-          topLinkWorks: true
-        });
-    </script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-    AOS.init({
-      duration: 1200
-    });
-    </script>
   </body>
 </html>
