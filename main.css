@@ -1,24 +1,14 @@
 body {
   margin: 0;
-  background-color:	#fffbf4;
+  background-color: #2a2a2a;
 }
 
 a {text-decoration: none;}
 
-th {
-  color: #284e6d;
-
-  background-color: #fffbf4;
-  border: 2px solid #284e6d;
-  border-radius: 4px;
-}
-
-td {
-  padding: 0;
-}
-
-table {
-  width: 100%;
+b {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .text-center {
@@ -34,17 +24,6 @@ table {
   display: block;
 }
 
-.table-container {
-  padding-top: 0px;
-  width: 300px;
-  height: 250px;
-  text-align: center;
-  margin: auto;
-}
-
-.table-border-bottom {
-  border-bottom: 2px solid #284e6d;
-}
 
 .flex-container {
   display: flex;
@@ -53,7 +32,7 @@ table {
 }
 
 .rounded {
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 .rounded-btn {
@@ -64,58 +43,38 @@ table {
   padding: 5px;
 }
 
+.limit-width {
+  max-width: 700px;
+  margin: auto;
+  display: block;
+}
+
 .link-btn {
   width: 25px;
   height: auto;
-  background-color: #fffbf4;
   border: none;
   display: inline-block;
 }
 
 .link-btn:hover {
-  background-color: #e5e1db;
   filter: grayscale(75%);
 }
 
-#title-image {
-  width: 130px;
-  display: block;
-  text-align: center;
-  color: lightgray;
-  box-shadow: 0px 0px 3px 1px;
-}
-
-#title {
+#header {
+  padding-top: 70px;
   height:230px;
-  padding-top: 30px;
-  background-color:	#fffbf4;
-  color: #4682B4;
-  font-family: 'Arvo', serif;
-  text-shadow: 0.5px 0.5px #3571a3;
-  border-bottom: 2px solid #3571a3;
+  color: #878787;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size: 10px;
 }
 
-#details {
-  background-color: #4682B4;
-  color: #fffbf4;
-  padding-top: 10px;
-  position: relative;
-  bottom: 0;
-  height: 400px;
-  width: 100%;
-  font-family: 'Arvo', serif;
-  text-align: center;
-}
-
-#skills {
-  border-top: 2px solid #284e6d;
-  margin-top: 150px;
-  padding-top: 20px;
-  background-color: #20B2AA;
-  background-color: #325f84;
-  width: 100%;
-  color: #fffbf4;
-  padding-bottom: 50px;
+#header .title{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1.5px;
+  color: #a5a5a5;
+  text-shadow: 0.5px 0.5px hsl(0, 0%, 45%);
 }
 
 #links {
