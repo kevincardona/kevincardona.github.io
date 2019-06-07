@@ -1,14 +1,19 @@
 body {
   margin: 0;
-  background-color: #2a2a2a;
+  background-color: #292929;
 }
 
 a {text-decoration: none;}
 
 b {
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
+  font-size: 10px;
   letter-spacing: 1px;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .text-center {
@@ -22,6 +27,9 @@ b {
 .center-block {
   margin: 0 auto;
   display: block;
+}
+
+.no-margin {
 }
 
 
@@ -50,10 +58,11 @@ b {
 }
 
 .link-btn {
-  width: 25px;
+  width: 40px;
   height: auto;
   border: none;
   display: inline-block;
+  margin: 0;
 }
 
 .link-btn:hover {
@@ -66,21 +75,41 @@ b {
   color: #878787;
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
-  font-size: 10px;
+  font-size: 8px;
 }
 
-#header .title{
+#header .title {
+  font-size: 18px;
+}
+
+#header .name{
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -1.5px;
-  color: #a5a5a5;
+  color: #cfcfcf;
   text-shadow: 0.5px 0.5px hsl(0, 0%, 45%);
 }
 
+#header .body {
+}
+
+#header .body-link {
+  color: #cfcfcf;
+  font-family: 'Lato', sans-serif;
+}
+#header .body-link:hover {
+  text-decoration: underline;
+}
+
 #links {
-  height: 50px;
+  height: 40px;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0px;
+  top: 0px;
   display: inline-block;
+  background: #878787;
+}
+
+#bottom-panel {
+  
 }
