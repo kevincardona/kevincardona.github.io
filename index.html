@@ -3,38 +3,38 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
     <title>Portfolio | Kevin Cardona</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">    
   </head>
 
 
   <body>
-    <div id="links">
+    <div class="nav">
       <a href="https://www.linkedin.com/in/kevincardona/">
-        <input type="image" class="link-btn center-block rounded-btn" src="images/linkedin-icon.png"></input>
+        <input type="image" class="nav__btn" src="images/linkedin-icon.png"></input>
       </a>
       <a href="https://github.com/kevincardona">
-        <input type="image" class="link-btn center-block rounded-btn" src="images/github-icon.png"></button>
+        <input type="image" class="nav__btn" src="images/github-icon.png"></input>
       </a>
       <a href="files/resume.pdf">
-        <input type="image" class="link-btn center-block rounded-btn" src="images/resume-icon.png"></button>
+        <input type="image" class="nav__btn" src="images/resume-icon.png"></input>
       </a>
     </div>
     <br/>
     
-    <div id="header">
-      <b class="text-center limit-width no-margin title">Hi my name is</b>
-      <h1 class="text-center name">Kevin Cardona.<h1>
-      <div class="text-center limit-width body">
+    <div class="profile">
+      <b class="profile__title">Hi my name is</b>
+      <h1 class="profile__name">Kevin Cardona.</h1>
+      <div class="profile__body">
         I am a Full-Stack Web intern at
-        <a class="body-link" href="https://www.vailsys.com/">Vail</a>.<br/>
+        <a class="profile__link" href="https://www.vailsys.com/">Vail</a>.<br/>
         I'll be graduating from 
-        <a class="body-link" href="http://purdue.edu/">Purdue Univeristy</a>
+        <a class="profile__link" href="http://purdue.edu/">Purdue Univeristy</a>
         this December.
         <br/><br/>
-        Check out some of my <a id="project-link" class="body-link" href="https://github.com/kevincardona">Projects</a>!
+        Check out some of my 
+        <a class="profile__link" href="https://github.com/kevincardona">Projects</a>!
       </div>
     </div>
   </body>
