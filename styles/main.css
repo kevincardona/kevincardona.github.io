@@ -15,27 +15,33 @@ a {
   float: right;
   margin: 5px;
 }
+
 .nav__btn {
   width: 40px;
   border-radius: 5px;
   background: #878787;
 }
+
 .nav__btn:hover {
-  filter: grayscale(75%);
-  filter: brightness(80%);
+  -webkit-filter: grayscale(75%);
+          filter: grayscale(75%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 .profile {
   width: 100vw;
-  top: 100px;
+  top: 150px;
   position: absolute;
   display: block;
   text-align: center;
 }
+
 .profile__title {
   text-align: center;
   font-size: 18px;
 }
+
 .profile__name {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
@@ -44,14 +50,16 @@ a {
   text-shadow: 0.5px 0.5px #737373;
   margin: 0px;
 }
+
 .profile__link {
   color: #cfcfcf;
 }
+
 .profile__link:hover {
   text-decoration: underline;
 }
+
 .profile__body {
   font-size: 16px;
 }
-
 /*# sourceMappingURL=main.css.map */

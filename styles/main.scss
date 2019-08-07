@@ -10,6 +10,7 @@ body {
   color: #878787;
   background-color: #292929;
 }
+
 a {text-decoration: none;}
 
 .nav {
@@ -29,7 +30,7 @@ a {text-decoration: none;}
 
 .profile {
   width: 100vw;
-  top: 100px;
+  top: 150px;
   position: absolute;
   display: block;
   text-align: center;
@@ -58,5 +59,4 @@ a {text-decoration: none;}
   &__body {
     font-size: 16px;
   }
-
 }
