@@ -1,29 +1,57 @@
 $Lato: 'Lato', sans-serif;
 $Montserrat: 'Montserrat', sans-serif;
 $White: #cfcfcf;
+$color__font--gray: #878787;
+
 
 body {
   margin: 0;
   font-size: 10px;
   letter-spacing: 1px;
   font-family: $Lato;
-  color: #878787;
+  color: $color__font--gray;
   background-color: #292929;
 }
 
 a {text-decoration: none;}
 
 .nav {
+  display: flex;
   float: right;
   margin: 5px;
   
   &__btn {
+    margin: 2px;
     width: 40px;
-    border-radius: 5px;
-    background: #878787;
-    &:hover {
-      filter: grayscale(75%);
-      filter: brightness(80%);
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 40px;
+      border-radius: 5px;
+      background: #878787;
+      position: absolute;
+      &:hover {
+        filter: grayscale(100%);
+        filter: brightness(80%);
+      }
+    }
+
+    #sassy {
+      height: 100%;
+      width: 100%;
+      color: $color__font--gray;
+      margin: auto;
+      text-align: center;
+    }
+
+    .resume {
+      transition: transform 0.15s;
+    }
+    &:hover > .resume {
+      transform: translate(0, -100px);
     }
   }
 }

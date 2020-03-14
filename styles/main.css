@@ -12,21 +12,58 @@ a {
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   float: right;
   margin: 5px;
 }
 
 .nav__btn {
+  margin: 2px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__btn img {
   width: 40px;
   border-radius: 5px;
   background: #878787;
+  position: absolute;
 }
 
-.nav__btn:hover {
-  -webkit-filter: grayscale(75%);
-          filter: grayscale(75%);
+.nav__btn img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
+}
+
+.nav__btn #sassy {
+  height: 100%;
+  width: 100%;
+  color: #878787;
+  margin: auto;
+  text-align: center;
+}
+
+.nav__btn .resume {
+  -webkit-transition: -webkit-transform 0.15s;
+  transition: -webkit-transform 0.15s;
+  transition: transform 0.15s;
+  transition: transform 0.15s, -webkit-transform 0.15s;
+}
+
+.nav__btn:hover > .resume {
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
 }
 
 .profile {
