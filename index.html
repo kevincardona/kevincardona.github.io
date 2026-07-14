@@ -7,7 +7,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -15,10 +15,19 @@
       padding: 0;
     }
 
+    :root {
+      --bg: #18181b;
+      --surface: #232328;
+      --border: #2e2e35;
+      --text: #e4e4e7;
+      --muted: #9d9da3;
+      --accent: #a78bfa;
+    }
+
     body {
       font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
-      background-color: #111111;
-      color: #e0e0e0;
+      background-color: var(--bg);
+      color: var(--text);
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -28,70 +37,145 @@
     }
 
     .card {
-      max-width: 32rem;
+      max-width: 36rem;
       width: 100%;
     }
 
     .card__name {
-      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-size: clamp(2rem, 6vw, 3.2rem);
       font-weight: 700;
       color: #ffffff;
       letter-spacing: -0.03em;
       line-height: 1.1;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
     }
 
     .card__role {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 400;
-      color: #888888;
+      color: var(--muted);
       margin-bottom: 1.5rem;
     }
 
     .card__bio {
       font-size: 1rem;
-      font-weight: 400;
-      color: #aaaaaa;
-      line-height: 1.7;
-      margin-bottom: 2.5rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 2rem;
     }
 
     .card__bio a {
-      color: #e0e0e0;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-color: #444444;
-      transition: text-decoration-color 0.2s;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
     }
 
     .card__bio a:hover {
-      text-decoration-color: #e0e0e0;
+      opacity: 0.75;
     }
 
-    .card__links {
+    .projects {
       display: flex;
-      gap: 1.5rem;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .projects__label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #52525b;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .project {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .project:hover {
+      border-color: #3f3f47;
+      background: #28282e;
+    }
+
+    .project__icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      background: #2e2e35;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .project__icon svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--muted);
+    }
+
+    .project__info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .project__name {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.1rem;
+    }
+
+    .project__desc {
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .project__arrow {
+      color: #52525b;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.25rem;
       align-items: center;
     }
 
-    .card__links a {
+    .links a {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 500;
-      color: #888888;
+      color: var(--muted);
       text-decoration: none;
       transition: color 0.2s;
     }
 
-    .card__links a:hover {
-      color: #e0e0e0;
+    .links a:hover {
+      color: var(--text);
     }
 
-    .card__links svg {
-      width: 18px;
-      height: 18px;
+    .links svg {
+      width: 16px;
+      height: 16px;
       fill: currentColor;
     }
   </style>
@@ -99,13 +183,49 @@
 <body>
   <main class="card">
     <h1 class="card__name">Kevin Cardona</h1>
-    <p class="card__role">Full-Stack Engineer</p>
+    <p class="card__role">Full-Stack Engineer · <a href="https://www.vailsys.com/" style="color: var(--muted); text-decoration: none;">Vail Systems</a> · Purdue CS</p>
     <p class="card__bio">
-      Building at <a href="https://www.vailsys.com/">Vail Systems</a>.
-      Purdue CS grad. I write software, occasionally ship something interesting,
-      and occasionally stream on Twitch.
+      Building <a href="https://audiobooky.io/">Audiobooky</a> — an audiobook player for everyone. Day job at <a href="https://www.vailsys.com/">Vail Systems</a>.
     </p>
-    <nav class="card__links">
+
+    <section class="projects" aria-label="Projects">
+      <p class="projects__label">Projects</p>
+
+      <a href="https://audiobooky.io/" class="project" target="_blank" rel="noopener">
+        <div class="project__icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.75 3.94L5.25 8.06v7.88l13.5-4.12V3.94zM5.25 18.81V20.5h15v-1.69L5.25 18.81z"/></svg>
+        </div>
+        <div class="project__info">
+          <p class="project__name">Audiobooky</p>
+          <p class="project__desc">Audiobook player for everyone</p>
+        </div>
+        <span class="project__arrow">↗</span>
+      </a>
+
+      <a href="#" class="project" onclick="return false;">
+        <div class="project__icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/></svg>
+        </div>
+        <div class="project__info">
+          <p class="project__name">Chess App</p>
+          <p class="project__desc">coming soon</p>
+        </div>
+        <span class="project__arrow">↗</span>
+      </a>
+
+      <a href="#" class="project" onclick="return false;">
+        <div class="project__icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 7.5V2H9v5.5l3 3 3-3zM7.5 9H2v6h5.5l3-3-3-3zM9 16.5V22h6v-5.5l-3-3-3 3zM16.5 9l-3 3 3 3H22V9h-5.5z"/></svg>
+        </div>
+        <div class="project__info">
+          <p class="project__name">Vimkeys</p>
+          <p class="project__desc">coming soon</p>
+        </div>
+        <span class="project__arrow">↗</span>
+      </a>
+    </section>
+
+    <nav class="links">
       <a href="https://github.com/kevincardona" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
