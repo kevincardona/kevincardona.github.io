@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg_grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E241F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111512;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="1024" height="1024" rx="180" fill="url(#bg_grad)"/>
+  
+  <!-- Stylized Modern Knight Piece -->
+  <path d="M720,820 L304,820 L304,740 C304,740 340,710 400,710 L624,710 C684,710 720,740 720,740 L720,820 Z" fill="#F0F1EC"/>
+  <path d="M400,710 C400,710 370,550 420,400 C470,250 580,200 680,220 C680,220 700,240 650,280 C650,280 750,300 780,450 C810,600 720,710 720,710 L400,710" fill="#F0F1EC"/>
+  <path d="M420,400 C420,400 320,420 240,320 C240,320 350,240 460,320" fill="#F0F1EC"/>
+  
+  <!-- Subtle Accent Detail -->
+  <circle cx="630" cy="380" r="25" fill="#7FA650"/>
+</svg>
